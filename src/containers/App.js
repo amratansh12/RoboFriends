@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import CardList from '../components/CardList';
 import Searchbox from '../components/Searchbox';
 import Scroll from '../components/Scroll';
+import {robots} from '../robots';
 import './App.css';
 
 
@@ -9,18 +10,19 @@ class App extends Component {
 	constructor(){
 		super()	
 		this.state = {
-			robots: [],
+			robots: robots,
 			searchfield: ''
 		}
 	}
 
-	componentDidMount(){
-		fetch('https://jsonplaceholder.typicode.com/users').then(response=>{
-			return response.json();
-		}).then(users=>{
-			this.setState({robots : users})
-		})
-	}
+	/* Not using the jsonplaceholder API for now, instead using my personal robots database */
+	// componentDidMount(){
+	// 	fetch('https://jsonplaceholder.typicode.com/users').then(response=>{
+	// 		return response.json();
+	// 	}).then(users=>{
+	// 		this.setState({robots : users})
+	// 	})
+	// }
 
 	onSearchChange = (event) => {
 		this.setState({searchfield: event.target.value});
