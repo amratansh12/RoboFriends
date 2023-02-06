@@ -18,10 +18,11 @@ export const robots = [
     email: 'p_gupta2@me.iitr.ac.in'
   },
   {
+    
     id: 4,
-    name: 'Sarika',
-    username: 'Karianne',
-    email: 'sarika@me.iitr.ac.in'
+    name: 'Akshat',
+    username: 'Moriah.Stanton',
+    email: 'a_sharma1@me.iitr.ac.in'
   },
   {
     id: 5,
@@ -73,9 +74,9 @@ export const robots = [
   },
   {
     id: 13,
-    name: 'Akshat',
-    username: 'Moriah.Stanton',
-    email: 'a_sharma1@me.iitr.ac.in'
+    name: 'Sarika',
+    username: 'Karianne',
+    email: 'sarika@me.iitr.ac.in'
   },
   {
     id: 14,
